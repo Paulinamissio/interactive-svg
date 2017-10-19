@@ -1,0 +1,45 @@
+#bear {
+  height: 14em;
+  width: 14em;
+}
+
+#left-eye {
+  animation: eye-shift 3s linear infinite;
+}
+
+#right-eye {
+  animation: eye-shift 3s linear infinite;
+}
+
+#bear:hover #left-ear {
+  transform: translate(0, -19px);
+}
+
+#bear:hover #right-ear {
+  transform: translate(0, -19px);
+}
+
+#left-ear {
+  transform-origin: center center;
+  transition: all .5s linear;
+}
+
+#right-ear {
+  transform-origin: center center;
+  transition: all .5s linear;
+}
+
+@keyframes eye-shift {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(-20px);
+  }
+}
